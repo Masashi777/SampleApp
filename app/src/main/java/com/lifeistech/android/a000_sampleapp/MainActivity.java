@@ -7,6 +7,7 @@ public class MainActivity extends AppCompatActivity {
 
     int number;
 
+<<<<<<< HEAD
     int master;
 
     int demo;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     int[] demo3;
 
     boolean DemoBoolean;
+=======
+    boolean aBoolean;
+>>>>>>> remake
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
