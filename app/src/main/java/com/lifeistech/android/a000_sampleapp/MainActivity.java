@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     int[] demo3;
 
+    boolean DemoBoolean;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
