@@ -2,12 +2,16 @@ package com.lifeistech.android.a000_sampleapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     int number;
 
-<<<<<<< HEAD
+    TextView textView;
+
     int master;
 
     int demo;
@@ -17,13 +21,22 @@ public class MainActivity extends AppCompatActivity {
     int[] demo3;
 
     boolean DemoBoolean;
-=======
+
     boolean aBoolean;
->>>>>>> remake
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void add(View v) {
+        number++;
+
+        textView.setText(String.valueOf(number));
+
+        if(BuildConfig.DEBUG) {
+            Log.d("Number", String.valueOf(number));
+        }
     }
 }
