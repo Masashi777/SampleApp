@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int number;
+    int number = 0;
 
     TextView textView;
 
@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textView = (TextView)findViewById(R.id.textView);
+        textView.setText(String.valueOf(number));
     }
 
     public void add(View v) {
